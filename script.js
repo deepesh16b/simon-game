@@ -1,39 +1,3 @@
-// $(document).keypress(function (e) { 
-//     $(".title").text("Level " + level);
-//     var level = 1;
-//     var winning = true;
-//     var arr = [];
-    
-//     while(winning)
-//     {
-//         $(".title").text("Level " + level);
-//         var random_no = Math.floor( Math.random()*4 );
-//         arr.push(random_no);
-//         var curr_color = document.querySelectorAll(".colors")[random_no];
-//         $(curr_color).fadeOut(50).fadeIn(50);
-//         for (let i = 0; i < arr.length; i++) {
-//             $(".colors").click(function (e) { 
-//                 if( $(e.target).hasClass("green")  && arr[i] == 0 )
-//                     {console.log("yup");}
-//                 else if( $(e.target).hasClass("red")  && arr[i] == 1 )
-//                     {console.log("yup");}
-//                 else if( $(e.target).hasClass("yellow")  && arr[i] == 2 )
-//                     {console.log("yup");}
-//                 else if( $(e.target).hasClass("blue")  && arr[i] == 3 )
-//                     {console.log("yup");}
-//                 else 
-//                 {
-//                     winning=false;
-//                 }
-//             });
-            
-//         }
-//         level++;
-//         if(level==10)
-//         winning=false;
-//     }
-// });
-
 var btnColors = ['green', 'red', 'yellow', 'blue'];
 var gamePattern = [];
 var userPattern = [];
