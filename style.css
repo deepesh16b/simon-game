@@ -14,6 +14,20 @@ body{
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-family: 'Press Start 2P', cursive;
 }
+#startBtn{
+    padding: 5px 10px;
+    margin-bottom:20px ;
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+    border-radius: 7px;
+    background: rgb(174, 149, 7);
+    color: white;
+}
+#startBtn:hover{
+    opacity: 0.9;
+    color: #222;
+}
 .container{
     display: grid;
     width: 420px;
@@ -50,4 +64,7 @@ body{
   }
   .game-over{
     background: #222;
+  }
+  .hide{
+    visibility: hidden;
   }
