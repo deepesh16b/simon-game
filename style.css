@@ -1,0 +1,53 @@
+body{
+    text-align: center;
+    background: url("bg.jpg");
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin: 60px auto;
+    color: rgb(198, 157, 8);
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Press Start 2P', cursive;
+}
+.container{
+    display: grid;
+    width: 420px;
+    height: 420px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.red{
+    background: red;
+}
+.blue{
+    background: blue;
+}
+.green{
+    background: green;
+}
+.yellow{
+    background: yellow;
+}
+.red, .blue, .green, .yellow{
+    margin: 20px;
+    width: 160px;
+    height: 160px;
+    border: 5px solid rgb(222, 216, 216);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.red:hover, .blue:hover, .green:hover, .yellow:hover {
+    opacity: 0.9;
+}
+.pressed {
+    box-shadow: 0 0 15px rgb(197, 197, 197);
+    background-color: rgb(75, 73, 73);
+  }
+  .game-over{
+    background: #222;
+  }
