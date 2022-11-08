@@ -43,6 +43,15 @@ var started = false;
 $(document).keypress(function (e) { 
     
     if(!started){
+        $("#startBtn").addClass("hide");
+        nextSequence();
+        started = true;
+    }
+});
+$("#startBtn").click(function (e) { 
+    
+    if(!started){
+        $("#startBtn").addClass("hide");
         nextSequence();
         started = true;
     }
@@ -102,6 +111,7 @@ function playSound(name)
 function startOver()
 {
     $(".title").text("Game Over! Press any key to Restart");
+    $("#startBtn").removeClass("hide");
     level = 0;
     started = false;
     gamePattern = [];
